@@ -15,12 +15,17 @@ import {
 function App() {
   return (
     <div className="App">
-      <Home/>
+      {/* <Home/> */}
       {/* <ProductList/> */}
       {/* <Product/> */}
       {/* <Register/> */}
       {/* <Login/> */}
       {/* <Cart /> */}
+      <Router>
+      <Route path="/">
+            <Home />
+          </Route>
+      </Router>
     </div>
   );
 }
