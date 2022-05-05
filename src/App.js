@@ -9,6 +9,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Routes,
   Link
 } from "react-router-dom";
 
@@ -22,9 +23,9 @@ function App() {
       {/* <Login/> */}
       {/* <Cart /> */}
       <Router>
-      <Route path="/">
-            <Home />
-          </Route>
+          <Routes>
+          <Route exact path="/" element={<Home />} />
+          </Routes>
       </Router>
     </div>
   );
