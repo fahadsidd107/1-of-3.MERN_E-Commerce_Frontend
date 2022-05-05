@@ -58,4 +58,4 @@ $ npm start
 
 ## Support
 
-- Contact Instructor: [Basir](mailto:fsiddiqui107@gmail.com.com)
+- Contact Developer: [Muhammad Fahad Siddiqui](mailto:fsiddiqui107@gmail.com.com)
