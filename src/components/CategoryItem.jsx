@@ -1,5 +1,12 @@
 import React from 'react'
 import styled from "styled-components";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link,Navigate
+} from "react-router-dom";
 import {mobile} from "./../Responsive";
 
 const Container = styled.div`
@@ -46,6 +53,7 @@ font-weight:600;
 const CategoryItem = ({ item }) => {
   return (
     <Container>
+    <Link></Link>
     <Img src={item.img}/>
     <Info>
     <Title>{item.title}</Title>
