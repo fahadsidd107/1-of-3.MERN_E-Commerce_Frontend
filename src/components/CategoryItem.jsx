@@ -53,13 +53,14 @@ font-weight:600;
 const CategoryItem = ({ item }) => {
   return (
     <Container>
-    <Link></Link>
-    <Img src={item.img}/>
+    <Link to={`/products/${item.cat}`}>
+    <Img src={item.img} />
     <Info>
-    <Title>{item.title}</Title>
-    <Button>SHOP NOW</Button>
+      <Title>{item.title}</Title>
+      <Button>SHOP NOW</Button>
     </Info>
-    </Container>
+    </Link>
+  </Container>
   )
 }
 
