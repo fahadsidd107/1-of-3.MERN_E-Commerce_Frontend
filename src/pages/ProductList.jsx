@@ -46,7 +46,7 @@ const ProductList = () => {
   const cat= location.pathname.split("/")[2]
   const [filter,setFilter] = useState({})
   const handleFilter = (event) => {
-    
+    const value = event.
   }
   return (
     <Container>
