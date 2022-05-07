@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
@@ -44,6 +44,7 @@ const Option = styled.option``;
 const ProductList = () => {
   const location = useLocation();
   const cat= location.pathname.split("/")[2]
+  const [filter,setFilter] = useState({})
   return (
     <Container>
       <Navbar />
@@ -53,7 +54,7 @@ const ProductList = () => {
         <Filter>
           <FilterText>Filter Products:</FilterText>
           <Select>
-            <Option disabled selected>
+            <Option disabled >
               Color
             </Option>
             <Option>White</Option>
@@ -64,7 +65,7 @@ const ProductList = () => {
             <Option>Green</Option>
           </Select>
           <Select>
-            <Option disabled selected>
+            <Option disabled >
               Size
             </Option>
             <Option>XS</Option>
@@ -77,7 +78,7 @@ const ProductList = () => {
         <Filter>
           <FilterText>Sort Products:</FilterText>
           <Select>
-            <Option selected>Newest</Option>
+            <Option >Newest</Option>
             <Option>Price (asc)</Option>
             <Option>Price (desc)</Option>
           </Select>
