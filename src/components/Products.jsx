@@ -14,7 +14,14 @@ const Products = ({cat,filter,sort}) => {
   const [products, setProducts] = useState([]);
   const [filteredproducts, setFilteredProducts] = useState([]);
 
-  useEffect(() => {},[cat]);
+  useEffect(() => {
+
+    const getProducts= async ()=>{
+try{}catch(err){
+
+}
+    }
+  },[cat]);
   
   return (
     <Container>
