@@ -49,7 +49,7 @@ const ProductList = () => {
   const handleFilter = (event) => {
     const value = event.target.value
     setFilter({
-      [event.target.name]: value
+      ...filter,[event.target.name]: value
     })
   }
 
