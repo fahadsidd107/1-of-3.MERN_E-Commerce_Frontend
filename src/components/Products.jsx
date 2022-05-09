@@ -25,6 +25,8 @@ try{
     }
     getProducts()
   },[cat]);
+
+  useEffect(() => {} , [cat,filter]);
   
   return (
     <Container>
