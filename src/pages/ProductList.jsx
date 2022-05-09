@@ -45,12 +45,15 @@ const ProductList = () => {
   const location = useLocation();
   const cat= location.pathname.split("/")[2]
   const [filter,setFilter] = useState({})
+
   const handleFilter = (event) => {
     const value = event.target.value
     setFilter({
       [event.target.name]: value
     })
   }
+
+  console.log(filter)
   return (
     <Container>
       <Navbar />
