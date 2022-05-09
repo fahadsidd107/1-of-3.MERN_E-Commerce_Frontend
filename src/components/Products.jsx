@@ -10,7 +10,8 @@ padding: 20px;
 justify-content: space-between;
 `;
 
-const Products = () => {
+const Products = ({cat,filter,sort}) => {
+  console.log(cat,filter,sort)
   return (
     <Container>
       {popularProducts.map((item) => (
