@@ -2,6 +2,7 @@ import React, { useState,useEffect } from "react";
 import styled from "styled-components";
 import {popularProducts} from "../Data";
 import Product from "./Product";
+import axios from './axios';
 
 const Container = styled.div`
 padding: 20px;
@@ -17,9 +18,9 @@ const Products = ({cat,filter,sort}) => {
   useEffect(() => {
 
     const getProducts= async ()=>{
-try{}catch(err){
-
-}
+try{
+ const res = await axios.get('')
+}catch(err){}
     }
   },[cat]);
   
