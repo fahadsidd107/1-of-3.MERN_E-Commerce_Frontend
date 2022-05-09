@@ -11,7 +11,8 @@ justify-content: space-between;
 `;
 
 const Products = ({cat,filter,sort}) => {
-  const [products, setProducts] = useState();
+  const [products, setProducts] = useState([]);
+  const [filteredproducts, setFilteredProducts] = useState([]);
   return (
     <Container>
       {popularProducts.map((item) => (
