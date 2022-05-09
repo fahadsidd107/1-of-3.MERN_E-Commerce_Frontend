@@ -15,6 +15,7 @@ const Products = ({cat,filter,sort}) => {
   const [filteredproducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {},[cat]);
+  
   return (
     <Container>
       {popularProducts.map((item) => (
