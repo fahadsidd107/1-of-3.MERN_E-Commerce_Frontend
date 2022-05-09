@@ -94,7 +94,7 @@ const ProductList = () => {
           </Select>
         </Filter>
       </FilterContainer>
-      <Products />
+      <Products cat={cat} filter={filter} sort={sort}/>
       <NewsLetter />
       <Footer />
     </Container>
