@@ -27,8 +27,10 @@ try{
   },[cat]);
 
   useEffect(() => {
-    cat && setFilteredProducts();
-  } , [cat,filter]);
+    cat && setFilteredProducts(
+      products.filter()
+    );
+  } , [products,cat,filter]);
   
   return (
     <Container>
