@@ -34,7 +34,7 @@ try{
   
   return (
     <Container>
-      {popularProducts.map((item) => (
+      {filteredproducts.map((item) => (
         <Product item={item} key={item.id} />
       ))}
     </Container>
