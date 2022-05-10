@@ -24,20 +24,24 @@ const Products = ({ cat, filters, sort }) => {
             : "http://localhost:7777/api/product"
         );
         setProducts(res.data);
-      } catch (err) {console.log(err)}
+      } catch (err) {
+        // console.log(err)
+      }
     };
     getProducts();
   }, [cat]);
 
   useEffect(() => {
-    cat &&
-      setFilteredProducts(
-        products.filter((item) =>
-          Object.entries(filters).every(([key, value]) =>
-            item[key].includes(value)
-          )
+   try{ cat &&
+    setFilteredProducts(
+      products.filter((item) =>
+        Object.entries(filters).every(([key, value]) =>
+          item[key].includes(value)
         )
-      );
+      )
+    );}catch(err){
+      // console.log(err)
+    }
   }, [products, cat, filters]);
 
   useEffect(() => {
