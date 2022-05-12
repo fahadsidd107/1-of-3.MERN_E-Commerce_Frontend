@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import NewsLetter from '../components/NewsLetter';
 import { mobile } from './../Responsive'
+import { useLocation } from "react-router";
 
 const Container=styled.div``;
 
@@ -117,6 +118,8 @@ padding: 15px;
 
 const FilterSizeOption = styled.option``;
 const Product = () => {
+  const location = useLocation();
+  const cat = location.pathname.split("/")[2];
   return (
     <Container>
       <Navbar/>
