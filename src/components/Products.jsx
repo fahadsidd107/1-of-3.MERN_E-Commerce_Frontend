@@ -41,7 +41,7 @@ const Products = ({ cat, filters, sort }) => {
       )
     );
       // console.log(err)
-  }, []);
+  }, [products, cat, filters]);
 
   useEffect(() => {
     if (sort === "newest") {
