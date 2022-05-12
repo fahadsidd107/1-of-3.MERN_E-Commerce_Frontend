@@ -80,7 +80,9 @@ const Product = ({item}) => {
              <ShoppingCartOutlined/>
             </Icon>
             <Icon>
+             <Link>
              <SearchOutlined/>
+             </Link>
             </Icon>
             <Icon>
              <FavoriteBorderOutlined/>
