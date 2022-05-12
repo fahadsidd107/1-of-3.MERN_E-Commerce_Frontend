@@ -2,6 +2,13 @@ import styled from "styled-components";
 import React from 'react'
 // import {  } from "@mui/icons-material";
 import { FavoriteBorderOutlined, SearchOutlined,ShoppingCartOutlined } from "@material-ui/icons";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link,Navigate
+} from "react-router-dom";
 
 const Info = styled.div`
 opacity: 0;
