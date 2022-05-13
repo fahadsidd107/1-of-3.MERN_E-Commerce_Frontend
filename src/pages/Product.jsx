@@ -1,4 +1,4 @@
-
+import { useEffect, useState } from "react";
 import { Add, Remove } from '@material-ui/icons';
 import React from 'react'
 import styled from "styled-components";
@@ -121,7 +121,8 @@ const Product = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
 
-  
+const [product, setProduct] = useState({});
+
   return (
     <Container>
       <Navbar/>
