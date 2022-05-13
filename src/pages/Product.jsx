@@ -8,7 +8,7 @@ import Navbar from '../components/Navbar';
 import NewsLetter from '../components/NewsLetter';
 import { mobile } from './../Responsive'
 import { useLocation } from "react-router";
-import axios from "axios";
+import { publicRequest } from "../requestMethods";
 
 const Container=styled.div``;
 
@@ -127,7 +127,7 @@ const [product, setProduct] = useState({});
 useEffect(() => {
   const getProduct = async () => {
     try {
-      const res = await axios.get(`http://localhost:7777/api/product/${id}`);
+      const res = await publicRequest.get(`/product/find/`+id);
       setProduct(res.data);
     } catch (err) {
       // console.log(err)
@@ -142,7 +142,7 @@ useEffect(() => {
       <Announcement/>
       <Wrapper>
         <ImgContainer>
-        <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+        <Image src={product.image} />
         </ImgContainer>
         <InfoContainer>
         <Title>Denim Jumpsuit</Title>
