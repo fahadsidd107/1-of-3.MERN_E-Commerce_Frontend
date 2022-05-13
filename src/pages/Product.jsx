@@ -123,7 +123,17 @@ const Product = () => {
 
 const [product, setProduct] = useState({});
 
-useEffect(() => {},[])
+useEffect(() => {
+  const getProduct = async () => {
+    try {
+      const res = await axios.get(`http://localhost:7777/api/product/${id}`);
+      setProduct(res.data);
+    } catch (err) {
+      // console.log(err)
+    }
+  };
+  getProduct();
+},[id])
 
   return (
     <Container>
