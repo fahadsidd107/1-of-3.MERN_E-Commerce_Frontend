@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 import NewsLetter from '../components/NewsLetter';
 import { mobile } from './../Responsive'
 import { useLocation } from "react-router";
+import axios from "axios";
 
 const Container=styled.div``;
 
