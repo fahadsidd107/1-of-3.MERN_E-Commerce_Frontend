@@ -123,6 +123,8 @@ const Product = () => {
 
 const [product, setProduct] = useState({});
 
+useEffect(() => {},[])
+
   return (
     <Container>
       <Navbar/>
