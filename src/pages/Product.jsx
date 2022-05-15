@@ -144,7 +144,7 @@ const Product = () => {
         <InfoContainer>
           <Title>{product.title}</Title>
           <Description>
-            {}
+            {product.description}
           </Description>
           <Price>{}</Price>
           <FilterContainer>
