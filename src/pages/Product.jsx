@@ -142,7 +142,7 @@ const Product = () => {
           <Image src={product.image} />
         </ImgContainer>
         <InfoContainer>
-          <Title>{}</Title>
+          <Title>{product.title}</Title>
           <Description>
             {}
           </Description>
