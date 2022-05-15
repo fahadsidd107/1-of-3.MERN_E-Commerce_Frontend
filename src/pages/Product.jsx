@@ -150,9 +150,9 @@ const Product = () => {
           <FilterContainer>
           <Filter>
               <FilterTitle>Color</FilterTitle>
-              {product.color.map((c) => (
-                <FilterColor color={c} key={c}  />
-              ))}
+              { product.color?.map((c) => (
+    <FilterColor color = {c} key = {c} />
+  ))}
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
