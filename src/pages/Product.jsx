@@ -146,7 +146,7 @@ const Product = () => {
           <Description>
             {product.description}
           </Description>
-          <Price>{}</Price>
+          <Price>{product.price}</Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
