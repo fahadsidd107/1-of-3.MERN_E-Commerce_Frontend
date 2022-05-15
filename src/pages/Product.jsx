@@ -148,12 +148,11 @@ const Product = () => {
           </Description>
           <Price>Rs. {product.price}</Price>
           <FilterContainer>
-            <Filter>
+          <Filter>
               <FilterTitle>Color</FilterTitle>
-              {product.color.map((c)=>(
-                <FilterColor color={c} />
+              {product.color.map((c) => (
+                <FilterColor color={c} key={c}  />
               ))}
-             
             </Filter>
             <Filter>
               <FilterTitle>Size</FilterTitle>
