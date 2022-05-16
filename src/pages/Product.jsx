@@ -119,7 +119,7 @@ const Product = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(2);
 
   useEffect(() => {
     const getProduct = async () => {
@@ -133,8 +133,12 @@ const Product = () => {
     getProduct();
   }, [id]);
 
-  const handleQuantity=()=>{
-    
+  const handleQuantity=(type)=>{
+if (type === "dec"){
+  setQuantity(quantity-1)
+}else{
+  setQuantity(quantity+1)
+}
   }
 
   return (
