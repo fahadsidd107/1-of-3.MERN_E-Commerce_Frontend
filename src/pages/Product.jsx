@@ -133,6 +133,10 @@ const Product = () => {
     getProduct();
   }, [id]);
 
+  const handleQuantity=()=>{
+    
+  }
+
   return (
     <Container>
       <Navbar />
