@@ -119,7 +119,7 @@ const Product = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
-  const [quantity, setQuantity] = useState();
+  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     const getProduct = async () => {
@@ -164,7 +164,7 @@ const Product = () => {
           <AddContainer>
             <AmountContainer>
               <Remove />
-              <Amount>1</Amount>
+              <Amount></Amount>
               <Add />
             </AmountContainer>
             <Button>Add to Cart</Button>
