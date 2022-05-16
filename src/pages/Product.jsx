@@ -118,8 +118,8 @@ const FilterSizeOption = styled.option``;
 const Product = () => {
   const location = useLocation();
   const id = location.pathname.split("/")[2];
-
   const [product, setProduct] = useState({});
+  const [quantity, setQuantity] = useState();
 
   useEffect(() => {
     const getProduct = async () => {
