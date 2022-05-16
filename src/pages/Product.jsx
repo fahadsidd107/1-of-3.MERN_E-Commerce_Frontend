@@ -164,7 +164,7 @@ const Product = () => {
           <AddContainer>
             <AmountContainer>
               <Remove />
-              <Amount></Amount>
+              <Amount>{quantity}</Amount>
               <Add />
             </AmountContainer>
             <Button>Add to Cart</Button>
