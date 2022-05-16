@@ -163,7 +163,7 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove />
+              <Remove onClick={()=>handleQuantity("dec")} />
               <Amount>{quantity}</Amount>
               <Add />
             </AmountContainer>
