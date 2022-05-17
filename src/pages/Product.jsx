@@ -120,7 +120,8 @@ const Product = () => {
   const id = location.pathname.split("/")[2];
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState();
+  const [color, setColor] = useState(null);
+  const [size, setSize] = useState(null);
 
   useEffect(() => {
     const getProduct = async () => {
@@ -142,6 +143,7 @@ const Product = () => {
     }
   }
 
+  const handleClick = () => {}
   return (
     <Container>
       <Navbar />
@@ -176,7 +178,7 @@ const Product = () => {
               <Amount>{quantity}</Amount>
               <Add onClick={()=>handleQuantity("inc")} />
             </AmountContainer>
-            <Button>Add to Cart</Button>
+            <Button onClick={handleClick}>Add to Cart</Button>
           </AddContainer>
         </InfoContainer>
       </Wrapper>
