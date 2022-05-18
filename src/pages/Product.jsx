@@ -135,15 +135,15 @@ const Product = () => {
     getProduct();
   }, [id]);
 
-  const handleQuantity=(type)=>{
+  const handleQuantity = (type) => {
     if (type === "dec" && quantity > 1) {
       setQuantity(quantity - 1);
     } else {
       setQuantity(quantity + 1);
     }
-  }
+  };
 
-  const handleClick = () => {}
+  const handleClick = () => {};
   return (
     <Container>
       <Navbar />
@@ -160,12 +160,12 @@ const Product = () => {
             <Filter>
               <FilterTitle>Color</FilterTitle>
               {product.color?.map((c) => (
-                <FilterColor color={c} key={c}  onClick={()=>setColor(c)}/>
+                <FilterColor color={c} key={c} onClick={() => setColor(c)} />
               ))}
             </Filter>
             <Filter>
-            <FilterTitle>Size</FilterTitle>
-              <FilterSize onChange={(e)=>setSize(e.target.value)}>
+              <FilterTitle>Size</FilterTitle>
+              <FilterSize onChange={(e) => setSize(e.target.value)}>
                 {product.size?.map((s) => (
                   <FilterSizeOption key={s}>{s}</FilterSizeOption>
                 ))}
@@ -174,9 +174,9 @@ const Product = () => {
           </FilterContainer>
           <AddContainer>
             <AmountContainer>
-              <Remove onClick={()=>handleQuantity("dec")} />
+              <Remove onClick={() => handleQuantity("dec")} />
               <Amount>{quantity}</Amount>
-              <Add onClick={()=>handleQuantity("inc")} />
+              <Add onClick={() => handleQuantity("inc")} />
             </AmountContainer>
             <Button onClick={handleClick}>Add to Cart</Button>
           </AddContainer>
