@@ -1,7 +1,15 @@
-import { Facebook, Instagram, MailOutline, Phone, Pinterest, Twitter,Room } from "@material-ui/icons";
+import {
+  Facebook,
+  Instagram,
+  MailOutline,
+  Phone,
+  Pinterest,
+  Twitter,
+  Room,
+} from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
-import {mobile} from "./../Responsive";
+import { mobile } from "./../Responsive";
 
 const Container = styled.div`
   display: flex;
@@ -46,20 +54,20 @@ const Center = styled.div`
 `;
 
 const Title = styled.h3`
-margin-bottom:20px;
+  margin-bottom: 20px;
 `;
 
 const List = styled.ul`
-margin: 0;
-padding: 0;
-List-style: none;
-display: flex;
-flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const ListItem = styled.li`
-width: 50%;
-margin-bottom: 10px;
+  width: 50%;
+  margin-bottom: 10px;
 `;
 
 const Right = styled.div`
@@ -75,9 +83,8 @@ const ContactItem = styled.div`
 `;
 
 const Payment = styled.img`
-    width: 50%;
+  width: 50%;
 `;
-
 
 const Footer = () => {
   return (
@@ -121,20 +128,20 @@ const Footer = () => {
         </List>
       </Center>
       <Right>
-      <Title>Contact</Title>
-      <ContactItem>
-      <Room style={{marginRight:"10px"}}/>
-2 Floor Al-Avenue Building,Block-4,Gulshan-e-Iqbal,Karachi,Pakistan
-      </ContactItem>
-      <ContactItem>
-      <Phone style={{marginRight:"10px"}}/>
-+92-321-1234567
-      </ContactItem>
-      <ContactItem>
-      <MailOutline style={{marginRight:"10px"}}/>
-fsiddiqui107@gmail.com
-      </ContactItem>
-    <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        <Title>Contact</Title>
+        <ContactItem>
+          <Room style={{ marginRight: "10px" }} />2 Floor Al-Avenue
+          Building,Block-4,Gulshan-e-Iqbal,Karachi,Pakistan
+        </ContactItem>
+        <ContactItem>
+          <Phone style={{ marginRight: "10px" }} />
+          +92-321-1234567
+        </ContactItem>
+        <ContactItem>
+          <MailOutline style={{ marginRight: "10px" }} />
+          fsiddiqui107@gmail.com
+        </ContactItem>
+        <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
   );
