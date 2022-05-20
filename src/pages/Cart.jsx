@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { mobile } from './../Responsive'
+import { mobile } from "./../Responsive";
 
 const Container = styled.div``;
 
@@ -35,7 +35,7 @@ const TopButton = styled.button`
 `;
 
 const TopTexts = styled.div`
-${mobile({ display: "none" })}
+  ${mobile({ display: "none" })}
 `;
 const TopText = styled.span`
   text-decoration: underline;
