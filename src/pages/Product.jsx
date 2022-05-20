@@ -139,8 +139,8 @@ const Product = () => {
   }, [id]);
 
   const handleQuantity = (type) => {
-    if (type === "dec" && quantity > 1) {
-      setQuantity(quantity - 1);
+    if (type === "dec") {
+      quantity > 1 && setQuantity(quantity - 1);
     } else {
       setQuantity(quantity + 1);
     }
