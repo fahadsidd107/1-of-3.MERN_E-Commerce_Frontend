@@ -9,6 +9,8 @@ import NewsLetter from "../components/NewsLetter";
 import { mobile } from "./../Responsive";
 import { useLocation } from "react-router";
 import { publicRequest } from "../requestMethods";
+import { addProduct } from "../redux/cartRedux";
+import { useDispatch } from "react-redux";
 
 const Container = styled.div``;
 
@@ -143,7 +145,9 @@ const Product = () => {
     }
   };
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    addProduct({ ...product, quantity, color, size })
+  };
   return (
     <Container>
       <Navbar />
