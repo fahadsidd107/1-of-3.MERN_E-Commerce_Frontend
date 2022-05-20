@@ -146,7 +146,7 @@ const Product = () => {
   };
 
   const handleClick = () => {
-    addProduct({ product:product})
+    addProduct({ product,})
   };
   return (
     <Container>
