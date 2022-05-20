@@ -124,6 +124,7 @@ const Product = () => {
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const getProduct = async () => {
@@ -146,7 +147,7 @@ const Product = () => {
   };
 
   const handleClick = () => {
-    addProduct({ product,})
+    addProduct({product,quantity})
   };
   return (
     <Container>
