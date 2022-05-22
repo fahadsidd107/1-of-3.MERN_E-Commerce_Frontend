@@ -148,6 +148,7 @@ const Product = () => {
 
   const handleClick = () => {
     dispatch(addProduct({ ...product, quantity, color, size }));
+    console.log(product);
   };
   return (
     <Container>
