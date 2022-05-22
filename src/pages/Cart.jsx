@@ -4,6 +4,7 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
+import { useSelector } from "react-redux";
 
 const Container = styled.div``;
 
@@ -153,6 +154,7 @@ const Button = styled.button`
 `;
 
 const Cart = () => {
+  const quantity = useSelector((state) => state.cart.quantity);
   return (
     <Container>
       <Navbar />
