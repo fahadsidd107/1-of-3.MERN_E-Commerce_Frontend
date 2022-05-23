@@ -7,6 +7,8 @@ import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
 import StripeChekcout from 'react-stripe-checkout';
 
+const KEY=process.env.REACT_STRIPE_KEY
+
 const Container = styled.div``;
 
 const Wrapper = styled.div`
