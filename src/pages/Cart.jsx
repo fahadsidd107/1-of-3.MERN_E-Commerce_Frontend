@@ -195,7 +195,7 @@ const Cart = () => {
                     <Remove />
                   </ProductAmountContainer>
                   <ProductPrice>
-                    Rs {product.price}
+                    Rs {product.price * product.quantity}
                   </ProductPrice>
                 </PriceDetail>
               </Product>
