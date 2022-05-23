@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
+import StripeChekcout from 'react-stripe-checkout';
 
 const Container = styled.div``;
 
