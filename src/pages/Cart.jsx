@@ -177,10 +177,10 @@ const Cart = () => {
                   <Image src={} />
                   <Details>
                     <ProductName>
-                      <b>Product:</b> {}
+                      <b>Product:</b> {product.title}
                     </ProductName>
                     <ProductId>
-                      <b>ID:</b> {}
+                      <b>ID:</b> {product._id}
                     </ProductId>
                     <ProductColor color={} />
                     <ProductSize>
