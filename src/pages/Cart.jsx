@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
-import StripeChekcout from 'react-stripe-checkout';
+import StripeCheckout from 'react-stripe-checkout';
 
 const KEY=process.env.REACT_STRIPE_KEY
 
@@ -158,6 +158,8 @@ const Button = styled.button`
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
+
+  const onToken = (token) => {}
   return (
     <Container>
       <Navbar />
@@ -223,6 +225,16 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>Rs {cart.total}</SummaryItemPrice>
             </SummaryItem>
+            <StripeCheckout
+              name="FAHAD."
+              image="https://avatars.githubusercontent.com/u/1486366?v=4"
+              billingAddress
+              shippingAddress
+              description={`Your total is $${cart.total}`}
+              amount={cart.total * 100}
+              token={onToken}
+              stripeKey={KEY}
+            ></StripeCheckout>
             <Button>CHECKOUT NOW</Button>
           </Summary>
         </Bottom>
