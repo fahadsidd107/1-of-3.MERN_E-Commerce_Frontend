@@ -174,28 +174,28 @@ const Cart = () => {
           {cart.products.map((product) => (
               <Product>
                 <ProductDetail>
-                  <Image src={product.image} />
+                  <Image src={} />
                   <Details>
                     <ProductName>
-                      <b>Product:</b> {product.title}
+                      <b>Product:</b> {}
                     </ProductName>
                     <ProductId>
-                      <b>ID:</b> {product._id}
+                      <b>ID:</b> {}
                     </ProductId>
-                    <ProductColor color={product.color} />
+                    <ProductColor color={} />
                     <ProductSize>
-                      <b>Size:</b> {product.size}
+                      <b>Size:</b> {}
                     </ProductSize>
                   </Details>
                 </ProductDetail>
                 <PriceDetail>
                   <ProductAmountContainer>
                     <Add />
-                    <ProductAmount>{product.quantity}</ProductAmount>
+                    <ProductAmount>{}</ProductAmount>
                     <Remove />
                   </ProductAmountContainer>
                   <ProductPrice>
-                    $ {product.price * product.quantity}
+                    $ {}
                   </ProductPrice>
                 </PriceDetail>
               </Product>
