@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from 'react-stripe-checkout';
+import { useEffect, useState } from "react";
 
 const KEY=process.env.REACT_STRIPE_KEY
 
@@ -158,7 +159,8 @@ const Button = styled.button`
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-  
+  const [stripeToken,setStripeToken] = useState(null)
+
 
   const onToken = (token) => {}
   return (
