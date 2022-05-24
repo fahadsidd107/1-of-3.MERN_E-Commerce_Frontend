@@ -7,6 +7,7 @@ import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
 import StripeCheckout from 'react-stripe-checkout';
 import { useEffect, useState } from "react";
+import { userRequest } from "../requestMethods";
 
 const KEY=process.env.REACT_STRIPE_KEY
 
@@ -168,7 +169,11 @@ const Cart = () => {
 
   useEffect(() => {
     const makeRequest= async ()=>{
-try{}catch{}
+try{
+  const res = await userRequest(("/checkout/payment",{
+    
+  }))
+}catch{}
     }
   },[stripeToken])
 
