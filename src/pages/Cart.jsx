@@ -5,12 +5,12 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
-import StripeCheckout from 'react-stripe-checkout';
+import StripeCheckout from "react-stripe-checkout";
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router-dom";
 
-const KEY=process.env.REACT_STRIPE_KEY
+const KEY = process.env.REACT_STRIPE_KEY;
 
 const Container = styled.div``;
 
@@ -161,13 +161,12 @@ const Button = styled.button`
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-  const [stripeToken,setStripeToken] = useState(null)
+  const [stripeToken, setStripeToken] = useState(null);
   const navigate = useNavigate();
 
-
   const onToken = (token) => {
-    setStripeToken(token)
-  }
+    setStripeToken(token);
+  };
 
   useEffect(() => {
     const makeRequest = async () => {
@@ -178,7 +177,8 @@ const Cart = () => {
         });
         navigate("/success", {
           stripeData: res.data,
-          products: cart, });
+          products: cart,
+        });
       } catch {}
     };
     stripeToken && makeRequest();
@@ -200,7 +200,7 @@ const Cart = () => {
         </Top>
         <Bottom>
           <Info>
-          {cart.products.map((product) => (
+            {cart.products.map((product) => (
               <Product>
                 <ProductDetail>
                   <Image src={product.image} />
