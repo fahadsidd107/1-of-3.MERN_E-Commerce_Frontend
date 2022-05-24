@@ -233,7 +233,7 @@ const Cart = () => {
             </SummaryItem>
             <StripeCheckout
               name="FAHAD."
-              image="https://avatars.githubusercontent.com/u/1486366?v=4"
+              image="https://avatars.githubusercontent.com/u/61376412?s=400&u=bd4075255e4b63efdd5dc216a0375013fe7e0781&v=4"
               billingAddress
               shippingAddress
               description={`Your total is Rs.${cart.total}`}
