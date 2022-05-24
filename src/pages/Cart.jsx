@@ -166,7 +166,11 @@ const Cart = () => {
     setStripeToken(token)
   }
 
-  useEffect(() => {},[])
+  useEffect(() => {
+    const makeRequest=()=>{
+      
+    }
+  },[stripeToken])
 
   return (
     <Container>
