@@ -162,7 +162,10 @@ const Cart = () => {
   const [stripeToken,setStripeToken] = useState(null)
 
 
-  const onToken = (token) => {}
+  const onToken = (token) => {
+    setStripeToken(token)
+  }
+
   return (
     <Container>
       <Navbar />
