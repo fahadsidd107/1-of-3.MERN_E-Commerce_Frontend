@@ -171,7 +171,8 @@ const Cart = () => {
     const makeRequest= async ()=>{
 try{
   const res = await userRequest(("/checkout/payment",{
-    
+    tokenId: stripeToken,
+          amount: cart.total*100,
   }))
 }catch{}
     }
