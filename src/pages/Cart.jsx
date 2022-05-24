@@ -172,7 +172,7 @@ const Cart = () => {
     const makeRequest = async () => {
       try {
         const res = await userRequest.post("/checkout/payment", {
-          tokenId: stripeToken.id,
+          tokenId: stripeToken,
           amount: 500,
         });
         navigate("/success", {
