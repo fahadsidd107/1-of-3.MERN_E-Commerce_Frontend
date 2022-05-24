@@ -177,7 +177,7 @@ const Cart = () => {
         });
         navigate("/success", {
           stripeData: res.data,
-          products: cart,
+          products: cart.total*100,
         });
       } catch {}
     };
