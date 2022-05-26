@@ -175,7 +175,7 @@ const Cart = () => {
           tokenId: stripeToken,
           amount: 500,
         });
-        navigate("/success");
+        navigate("/success",{data:res.data});
       } catch {}
     };
     makeRequest();
