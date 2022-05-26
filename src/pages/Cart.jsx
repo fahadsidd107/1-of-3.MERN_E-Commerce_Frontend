@@ -5,12 +5,12 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "./../Responsive";
 import { useSelector } from "react-redux";
-import StripeCheckout from "react-stripe-checkout";
+import StripeCheckout from "react-stripe-checkout"
 import { useEffect, useState } from "react";
 import { userRequest } from "../requestMethods";
 import { useNavigate } from "react-router-dom";
 
-const KEY = process.env.REACT_STRIPE_KEY;
+const KEY = process.env.REACT_APP_STRIPE;
 
 const Container = styled.div``;
 
