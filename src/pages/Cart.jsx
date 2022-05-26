@@ -178,7 +178,7 @@ const Cart = () => {
         navigate("/success",{data:res.data});
       } catch {}
     };
-   stripeToken && makeRequest();
+   stripeToken &&  makeRequest();
   }, [stripeToken, cart.total, navigate]);
 
   return (
