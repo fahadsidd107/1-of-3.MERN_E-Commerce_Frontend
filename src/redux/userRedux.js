@@ -14,5 +14,5 @@ error: false,
   },
 });
 
-export const { addProduct } = cartSlice.actions;
-export default cartSlice.reducer;
+export const {  } = userSlice.actions;
+export default userSlice.reducer;
