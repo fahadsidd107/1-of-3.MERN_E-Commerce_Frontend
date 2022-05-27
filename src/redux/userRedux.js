@@ -8,11 +8,7 @@ isFetching: false,
 error: false,
   },
   reducers: {
-    addProduct: (state, action) => {
-      state.quantity += 1;
-      state.products.push(action.payload);
-      state.total += action.payload.price * action.payload.quantity;
-    },
+    loginStart: (state) => {},
   },
 });
 
