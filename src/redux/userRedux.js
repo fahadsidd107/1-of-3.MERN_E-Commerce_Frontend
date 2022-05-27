@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const cartSlice = createSlice({
-  name: "cart",
+const userSlice = createSlice({
+  name: "user",
   initialState: {
-    products: [],
-    quantity: 0,
-    total: 0,
+currentUser: null,
+isFetching: false,
+error: false,
   },
   reducers: {
     addProduct: (state, action) => {
