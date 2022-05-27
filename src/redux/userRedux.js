@@ -15,7 +15,10 @@ error: false,
       state.isFetching = true;
       state.currentUser = action.payload;
     },
-    loginFailure: (state) => {},
+    loginFailure: (state) => {
+      state.isFetching = false;
+      state.error = true;
+    },
   },
 });
 
