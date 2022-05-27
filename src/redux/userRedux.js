@@ -9,6 +9,8 @@ error: false,
   },
   reducers: {
     loginStart: (state) => {},
+    loginSuccess: (state) => {},
+    loginFailure: (state) => {},
   },
 });
 
