@@ -1,6 +1,8 @@
-import { loginStart } from "./userRedux";
+import { loginStart, } from "./userRedux";
 
-export const login = async (dispatch,user){
+export const login = async (dispatch,user)=>{
     dispatch(loginStart());
-    try{}catch{}
+    try{}catch(err){
+        dispatch(loginFailure());
+    }
 }
