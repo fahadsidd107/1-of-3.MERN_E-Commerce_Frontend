@@ -62,14 +62,14 @@ const Link = styled.a`
 `;
 
 const Login = () => {
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
     <Container>
      <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
-          <Input placeholder="Email" />
+          <Input placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
           <Input placeholder="Password" />
           <Button>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
