@@ -64,6 +64,8 @@ const Link = styled.a`
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const handleClick = (e) => {}
   return (
     <Container>
      <Wrapper>
@@ -71,7 +73,7 @@ const Login = () => {
         <Form>
           <Input placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
           <Input placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
-          <Button>LOGIN</Button>
+          <Button onClick={handleClick}>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
           <Link>CREATE A NEW ACCOUNT</Link>  
         </Form>
