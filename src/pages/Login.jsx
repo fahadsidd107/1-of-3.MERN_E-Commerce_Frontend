@@ -70,7 +70,7 @@ const Login = () => {
         <Title>SIGN IN</Title>
         <Form>
           <Input placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
-          <Input placeholder="Password" />
+          <Input placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
           <Button>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
           <Link>CREATE A NEW ACCOUNT</Link>  
