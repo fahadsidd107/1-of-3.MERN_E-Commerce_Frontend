@@ -70,7 +70,7 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    login()
+    login(dispatch, {email, password});
   }
   return (
     <Container>
