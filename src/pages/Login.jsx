@@ -65,7 +65,9 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleClick = (e) => {}
+  const handleClick = (e) => {
+    e.preventDefault();
+  }
   return (
     <Container>
      <Wrapper>
