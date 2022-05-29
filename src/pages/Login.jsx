@@ -2,6 +2,8 @@ import React from 'react'
 import styled from "styled-components";
 import { mobile } from './../Responsive'
 import { useEffect, useState } from "react";
+import { login } from "../redux/apiCalls";
+import { useDispatch, useSelector } from "react-redux";
 
 const Container = styled.div`
   width: 100vw;
@@ -64,9 +66,11 @@ const Link = styled.a`
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
 
   const handleClick = (e) => {
     e.preventDefault();
+    login()
   }
   return (
     <Container>
