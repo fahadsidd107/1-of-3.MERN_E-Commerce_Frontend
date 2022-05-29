@@ -61,6 +61,7 @@ const Button = styled.button`
 `;
 
 const Error = styled.span`
+color:red;
 `
 
 const Link = styled.a`
