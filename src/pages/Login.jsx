@@ -60,6 +60,9 @@ const Button = styled.button`
   }
 `;
 
+const Error = styled.span`
+`
+
 const Link = styled.a`
   margin: 5px 0px;
   font-size: 12px;
@@ -85,6 +88,7 @@ const Login = () => {
           <Input placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
           <Input placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
           <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
+          <Error>Something went wrong....</Error>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
           <Link>CREATE A NEW ACCOUNT</Link>  
         </Form>
