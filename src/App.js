@@ -17,7 +17,7 @@ import {
 import { TrendingUpTwoTone } from "@material-ui/icons";
 
 function App() {
-  const user = useSelector();
+  const user = useSelector((state) => state.user.currentUser);
   return (
     <div className="App">
       {/* <Home/> */}
