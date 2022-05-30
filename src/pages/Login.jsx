@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import styled from "styled-components";
-import { mobile } from './../Responsive'
+import { mobile } from "./../Responsive";
 import { useEffect, useState } from "react";
 import { login } from "../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,8 +25,8 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: white;
-  margin-left:40px;
-  ${mobile({ width: "75%",marginLeft:0 })}
+  margin-left: 40px;
+  ${mobile({ width: "75%", marginLeft: 0 })}
 `;
 
 const Title = styled.h1`
@@ -54,15 +54,15 @@ const Button = styled.button`
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
-  &:disabled{
-    color:green;
-    cursor:not-allowed;
+  &:disabled {
+    color: green;
+    cursor: not-allowed;
   }
 `;
 
 const Error = styled.span`
-color:red;
-`
+  color: red;
+`;
 
 const Link = styled.a`
   margin: 5px 0px;
@@ -79,23 +79,35 @@ const Login = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    login(dispatch, {email, password});
-  }
+    login(dispatch, { email, password });
+  };
   return (
     <Container>
-     <Wrapper>
+      <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
-          <Input placeholder="Email" onChange={(e)=>{setEmail(e.target.value)}}/>
-          <Input placeholder="Password" onChange={(e)=>{setPassword(e.target.value)}}/>
-          <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
+          <Input
+            placeholder="Email"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <Input
+            placeholder="Password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+          />
+          <Button onClick={handleClick} disabled={isFetching}>
+            LOGIN
+          </Button>
           {error && <Error>Something went wrong....</Error>}
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>  
+          <Link>CREATE A NEW ACCOUNT</Link>
         </Form>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
