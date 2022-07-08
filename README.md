@@ -2,11 +2,6 @@
 
 Welcome to my React and Node Website Code to build a fully-functional e-commerce website. Clone this repo to build an e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
-## Demo Website
-
-- 👉 Heroku : [https://react-amazona.herokuapp.com](https://react-amazona.herokuapp.com)
-- 👉 Heroku Mirror: [https://react-amazona-mirror.herokuapp.com](https://react-amazona-mirror.herokuapp.com)
-
 # You Will Learn
 
 This repo is just frontend of User Site,There two more parts.
