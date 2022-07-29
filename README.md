@@ -8,16 +8,6 @@ This repo is just frontend of User Site,There two more parts.
 - 👉 Admin Panel FrontEnd : [https://github.com/fahadsidd107/3-of-3.MERN_E-Commerce_AdminPanel.git](https://github.com/fahadsidd107/3-of-3.MERN_E-Commerce_AdminPanel.git)
 - 👉 Node JS Backend : [https://github.com/fahadsidd107/2-of-3.MERN_E-Commerce_BackendServer.git](https://github.com/fahadsidd107/2-of-3.MERN_E-Commerce_BackendServer.git)
 
-## You Will Learn
-
-- HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
-- React: Components, Props, Events, Hooks, Router, Axios
-- Redux: Store, Reducers, Actions
-- Node & Express: Web API, Body Parser, File Upload, JWT
-- MongoDB: Mongoose, Aggregation
-- Development: ESLint, Babel, Git, Github,
-- Deployment: Heroku
-- Watch React & Node Tutorial
 
 ## Run Locally
 
